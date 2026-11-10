@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NSCS – Lernhilfe</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--ink:#172033;--muted:#5c667a;--blue:#2457a7;--teal:#087f78;--line:#dce3ee;--soft:#eaf1fc}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+header{background:linear-gradient(120deg,#17365f,#2766a8);color:white;padding:32px 18px}header .wrap,main{max-width:980px;margin:auto}h1{font-size:clamp(1.8rem,5vw,2.7rem);line-height:1.15;margin:0 0 8px}header p{margin:0;color:#e5efff}
+main{padding:20px 16px 60px}.intro,.panel,.chapter,.quiz,.study{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin:14px 0;box-shadow:0 3px 14px #1b35500b}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}nav a{color:var(--blue);background:white;border:1px solid var(--line);border-radius:99px;padding:7px 12px;text-decoration:none;font-size:.9rem}
+h2{color:#17365f;margin:0 0 12px;font-size:1.35rem}h3{margin:15px 0 4px;color:var(--teal);font-size:1.02rem}p{margin:5px 0 10px}.muted{color:var(--muted)}.remember{background:#edf7f6;border-left:4px solid var(--teal);padding:10px 13px;border-radius:8px;margin:10px 0}.warning{background:#fff7e8;border-left:4px solid #d99a25;padding:10px 13px;border-radius:8px;margin:10px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}.tile{background:#f7f9fd;border:1px solid var(--line);border-radius:12px;padding:12px}
+button{border:0;background:var(--blue);color:white;padding:10px 15px;border-radius:10px;font:inherit;cursor:pointer}button.secondary{background:#e8eef8;color:#183c70}button:focus,a:focus{outline:3px solid #8db6ff;outline-offset:2px}
+input[type=checkbox]{transform:scale(1.2);margin-right:8px}.progress{height:10px;background:#e6ebf3;border-radius:20px;overflow:hidden;margin:8px 0}.progress span{display:block;height:100%;background:var(--teal);width:0}
+.q{padding:13px;border:1px solid var(--line);border-radius:12px;margin:10px 0}.answer{display:none;color:#145d43;background:#eef8f2;padding:9px;border-radius:8px;margin-top:8px}.flash{min-height:120px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:#f0f5fc;border-radius:12px;padding:18px}
+footer{text-align:center;color:var(--muted);padding:20px;font-size:.9rem}
+@media print{nav,button{display:none}.chapter,.panel,.intro{break-inside:avoid;box-shadow:none}body{background:white}}
+</style></head><body>
+<header><div class="wrap"><h1>NSCS – deine Lernhilfe</h1><p>Einfach erklärt. Schritt für Schritt. Ohne unnötig komplizierte Sätze.</p></div></header>
+<main>
+<section class="intro"><h2>So lernst du am besten</h2><p><b>1.</b> Nimm dir nur ein Thema auf einmal vor. <b>2.</b> Lies die Erklärung. <b>3.</b> Sag sie mit eigenen Worten nach. <b>4.</b> Mach die Quizfragen. Lieber 15 Minuten konzentriert als 2 Stunden nur lesen.</p><div class="remember"><b>Dein wichtigster Trick:</b> Frag dich bei jedem Gerät: „Welche Aufgabe hat es – und auf welcher OSI-Schicht arbeitet es?“</div><p class="muted">Die Website funktioniert offline: Speichere diese Datei und öffne sie im Browser.</p></section>
+<nav><a href="#plan">Lernplan</a><a href="#themen">Alle Themen</a><a href="#quiz">Quiz</a><a href="#karten">Karteikarten</a><a href="#check">Checkliste</a></nav>
+<section id="plan" class="panel"><h2>Ein einfacher Lernplan</h2><div class="grid">
+<div class="tile"><b>Tag 1</b><p>Grundlagen + OSI/TCP-IP</p></div><div class="tile"><b>Tag 2</b><p>Medien + Topologien</p></div><div class="tile"><b>Tag 3</b><p>Komponenten + Domänen</p></div><div class="tile"><b>Tag 4</b><p>MAC/Ethernet + Switching</p></div><div class="tile"><b>Tag 5</b><p>Quiz wiederholen und Schwächen lernen</p></div></div><p class="muted">Wenn du weniger Zeit hast: Lerne jeden Tag zwei kurze Themenblöcke und wiederhole am Ende die Merksätze.</p></section>
+<section id="themen"><h2>Die 7 Prüfungsthemen</h2>
+<div class="chapter"><h2>1. Grundlagen der Netzwerke</h2>
+<h3>Was ist ein Netzwerk?</h3><p>Ein Netzwerk verbindet Geräte, damit sie Daten austauschen und Ressourcen gemeinsam nutzen können – zum Beispiel Drucker, Dateien oder Internet. Ein <b>Protokoll</b> ist die gemeinsame Regel, nach der Geräte miteinander kommunizieren.</p>
+<h3>Client, Server und Peer-to-Peer</h3><p><b>Client</b> fragt etwas an. <b>Server</b> bietet einen Dienst an. Das sind Rollen, keine bestimmten Gerätetypen. Bei <b>Peer-to-Peer</b> sind alle Geräte gleichberechtigt.</p>
+<h3>Netzgrößen</h3><p><b>PAN</b> persönlich (Handy–Kopfhörer) · <b>LAN</b> Gebäude/Standort · <b>MAN</b> Stadt/Campus · <b>WAN</b> Länder/Kontinente.</p>
+<h3>TCP und UDP</h3><p><b>TCP:</b> baut eine Verbindung auf, bestätigt Empfang und sorgt für zuverlässige Übertragung. <b>UDP:</b> schickt Daten ohne Verbindungsaufbau und ist schlanker; Zustellung wird nicht garantiert.</p>
+<div class="remember"><b>Merke:</b> TCP = zuverlässig, mehr Aufwand. UDP = schnell/schlank, keine eingebaute Zustellgarantie. IP selbst ist verbindungslos.</div></div>
+<div class="chapter"><h2>2. Schichtenmodelle – OSI und TCP/IP</h2><p>Das OSI-Modell teilt Netzwerkkommunikation in 7 Aufgabenbereiche. Von unten nach oben:</p>
+<div class="grid"><div class="tile"><b>7 Anwendung</b><br>Programme/Dienste, z. B. HTTP, DNS</div><div class="tile"><b>6 Darstellung</b><br>Codierung, Kompression</div><div class="tile"><b>5 Kommunikation</b><br>Sitzungen/Dialog</div><div class="tile"><b>4 Transport</b><br>TCP/UDP, Ports</div><div class="tile"><b>3 Vermittlung</b><br>IP-Adressen, Routing</div><div class="tile"><b>2 Sicherung</b><br>MAC-Adressen, Frames</div><div class="tile"><b>1 Bitübertragung</b><br>Kabel, Stecker, Signale</div></div>
+<h3>Die PDU-Namen</h3><p>Schicht 1 = <b>Bit</b> · Schicht 2 = <b>Frame</b> · Schicht 3 = <b>Paket</b> · Schicht 4 = <b>Segment</b> (TCP) oder Datagramm (UDP) · Schichten 5–7 = <b>Daten</b>.</p>
+<h3>TCP/IP</h3><p>Das praktische Modell hat meist 4 Schichten: Anwendung, Transport, Internet, Link. Es fasst OSI 5–7 zur Anwendung und OSI 1–2 zum Link zusammen. Manchmal wird Link in 2 Schichten geteilt (5-Schichten-Modell).</p>
+<h3>Kapselung</h3><p>Beim Senden packt jede Schicht Zusatzinformationen dazu: <b>Daten → Segment → Paket → Frame → Bits</b>. Beim Empfangen wird es in umgekehrter Reihenfolge ausgepackt: Dekapselung.</p>
+<div class="remember"><b>Merke:</b> Hub = Layer 1, Switch = Layer 2, Router = Layer 3.</div></div>
+<div class="chapter"><h2>3. Übertragungsmedien</h2>
+<h3>Twisted Pair</h3><p>Kupferkabel mit 4 verdrillten Paaren = 8 Adern. Die Verdrillung verringert Störungen. 10/100 Mbit/s verwenden meist 2 Paare, Gigabit alle 4.</p>
+<h3>Kabelkategorien</h3><p><b>Cat 5e:</b> bis 1 Gbit/s · <b>Cat 6:</b> 10 Gbit/s bis ca. 55 m · <b>Cat 6A:</b> 10 Gbit/s bis 100 m · <b>Cat 8:</b> 25/40 Gbit/s bis ca. 30 m.</p>
+<h3>Schirmung und Länge</h3><p>U = ungeschirmt, F = Folie, S = Geflecht. Kupfer-Ethernet: max. 100 m insgesamt, davon höchstens 90 m fest verlegtes Kabel und zusammen höchstens 10 m Patchkabel.</p>
+<h3>RJ45, T568A/B und Crossover</h3><p>A und B unterscheiden sich durch vertauschte grüne und orange Paare. Gleiches Schema an beiden Enden = 1:1-Kabel. T568A an einem Ende und T568B am anderen = Crossover. Moderne Geräte haben oft Auto-MDI-X.</p>
+<h3>Koax und Glasfaser</h3><p>Koax: Innenleiter plus Schirm; früher Ethernet-Bus, heute Kabel-TV/Internet. Glasfaser überträgt Licht und ist unempfindlich gegen elektromagnetische Störungen. <b>Singlemode</b> = ein Lichtweg, große Reichweite. <b>Multimode</b> = mehrere Lichtwege, kürzere Reichweite.</p>
+<h3>Rechnen</h3><p>1 Byte = 8 Bit. Übertragungszeit = Datenmenge in Bit ÷ Datenrate in Bit/s. Beispiel: 800 Mbit bei 100 Mbit/s dauern ideal 8 Sekunden.</p>
+<div class="remember"><b>Merke:</b> Für 10 Gbit/s auf 100 m brauchst du Cat 6A. Die 100-m-Grenze umfasst auch Patchkabel.</div></div>
+<div class="chapter"><h2>4. Topologien und Zugriffsverfahren</h2>
+<h3>Physisch und logisch</h3><p>Physisch = wie Kabel wirklich liegen. Logisch = welchen Weg die Daten nehmen. Ein Hub-Netz kann physisch Stern und logisch Bus sein.</p>
+<div class="grid"><div class="tile"><b>Bus</b><br>Ein gemeinsames Kabel. Kabelbruch stört das ganze Segment.</div><div class="tile"><b>Stern</b><br>Alle Geräte am Zentralgerät. Fällt es aus, fällt alles aus.</div><div class="tile"><b>Baum</b><br>Hierarchische Sterne. Ausfall eines Verteilers betrifft seinen Teilbaum.</div><div class="tile"><b>Ring</b><br>Jeder hat zwei Nachbarn. Einfacher Ring anfällig; Doppelring kann einen Fehler überbrücken.</div><div class="tile"><b>Masche</b><br>Mehrere Wege, ausfallsicher, aber viele Kabel/Links.</div><div class="tile"><b>Punkt-zu-Punkt</b><br>Direkte Verbindung von zwei Geräten.</div></div>
+<h3>CSMA/CD</h3><p>Bei Ethernet-Halbduplex: Leitung abhören → senden und mithören → Kollision erkennen und abbrechen → zufällige Zeit warten (Backoff) → erneut versuchen. Nach 16 erfolglosen Versuchen wird abgebrochen.</p>
+<h3>CSMA/CA und Token</h3><p>WLAN versucht Kollisionen zu vermeiden (CSMA/CA): zuhören, zufällig warten, Bestätigung (ACK) abwarten. Beim Token Passing darf nur senden, wer das Token besitzt.</p>
+<div class="remember"><b>Merke:</b> CD = Collision Detection (erkennen), CA = Collision Avoidance (vermeiden). Switch + Vollduplex: keine Kollisionen.</div></div>
+<div class="chapter"><h2>5. Netzwerkkomponenten und Domänen</h2>
+<div class="grid"><div class="tile"><b>Repeater / Hub – Layer 1</b><br>Regeneriert bzw. verteilt Signale. Hub sendet alles an alle Ports.</div><div class="tile"><b>Switch / Bridge – Layer 2</b><br>Lernt MAC-Adressen und sendet Frames gezielt weiter.</div><div class="tile"><b>Router – Layer 3</b><br>Verbindet IP-Netze und leitet nicht einfach Broadcasts weiter.</div><div class="tile"><b>Access Point – Layer 1/2</b><br>Verbindet WLAN-Funk mit dem kabelgebundenen LAN.</div></div>
+<h3>Kollisions- und Broadcastdomäne</h3><p><b>Kollisionsdomäne:</b> Bereich, in dem gleichzeitiges Senden kollidieren kann. <b>Broadcastdomäne:</b> Bereich, den ein Broadcast erreicht.</p><p>Switch: trennt Kollisionsdomänen pro Port, aber nicht automatisch Broadcastdomänen. Router trennt Broadcastdomänen pro Interface. VLANs teilen ebenfalls Broadcastdomänen.</p>
+<div class="warning"><b>Prüfungsfalle:</b> Ein Hub hinter einem Switchport verbindet alle Geräte am Hub zu EINER gemeinsamen Kollisionsdomäne. Nicht jedes Kabel einzeln zählen.</div></div>
+<div class="chapter"><h2>6. MAC-Adressen und Ethernet</h2>
+<h3>MAC-Adresse</h3><p>Eine MAC-Adresse hat <b>48 Bit = 6 Byte</b> und wird meist hexadezimal geschrieben, z. B. 00:1A:2B:3C:4D:5E. Erste 3 Byte = Herstellerkennung (OUI), letzte 3 Byte = Geräte-/NIC-Teil.</p>
+<p><b>I/G-Bit:</b> 0 = Unicast, 1 = Gruppenadresse. <b>U/L-Bit:</b> 0 = global vergeben, 1 = lokal administriert. Broadcast: FF:FF:FF:FF:FF:FF.</p>
+<h3>Ethernet-Frame</h3><p>Ziel-MAC 6 B + Quell-MAC 6 B + Typ 2 B + Nutzdaten 46–1500 B + FCS 4 B. Header = 14 B. Framegröße = <b>64–1518 Byte</b> (ohne Präambel/SFD). MTU = 1500 Byte Nutzdaten.</p>
+<h3>Padding und Typ</h3><p>Zu kleine Nutzdaten werden mit Padding auf mindestens 46 Byte ergänzt. Beispiel: ARP hat 28 Byte, daher 18 Byte Padding. EtherType: 0x0800 = IPv4, 0x0806 = ARP, 0x86DD = IPv6.</p>
+<div class="remember"><b>Merke:</b> 14 + 46 + 4 = 64 Byte Minimum. 14 + 1500 + 4 = 1518 Byte Maximum.</div></div>
+<div class="chapter"><h2>7. Switching</h2>
+<h3>Die fünf Aufgaben</h3><p><b>Learning:</b> Quell-MAC und Eingangsport merken. <b>Forwarding:</b> bekannte Ziel-MAC gezielt senden. <b>Filtering:</b> Ziel liegt am selben Port wie Quelle – verwerfen. <b>Flooding:</b> Ziel unbekannt oder Broadcast – an alle außer Eingangsport. <b>Aging:</b> alte Tabelleneinträge löschen.</p>
+<h3>VLAN, Access und Trunk</h3><p>VLAN teilt einen Switch in getrennte Broadcastdomänen. Jedes VLAN hat normalerweise ein eigenes IP-Subnetz. Access-Port = ein VLAN, Frames ungetaggt. Trunk = mehrere VLANs, Frames mit 802.1Q-Tag. VLAN-ID hat 12 Bit; normalerweise nutzbar 1–4094.</p>
+<h3>Schleifen und STP</h3><p>Redundante Verbindungen können Schleifen und Broadcast-Stürme verursachen. STP blockiert ausgewählte Verbindungen und hält Ersatzwege bereit. Link Aggregation bündelt mehrere Kabel zu einem logischen Link. PoE liefert Strom über das Netzwerkkabel.</p>
+<div class="remember"><b>Merksatz:</b> Quelle lernen, Ziel entscheiden. Access = eins, Trunk = viele.</div></div>
+</section>
+<section id="quiz" class="quiz"><h2>Mini-Quiz – teste dich selbst</h2><p class="muted">Beantworte die Frage zuerst im Kopf und klicke dann auf „Antwort anzeigen“.</p>
+<div class="q"><b>1. Auf welcher OSI-Schicht arbeitet ein normaler Switch?</b><button class="secondary" onclick="reveal(0)">Antwort anzeigen</button><div class="answer" id="a0">Schicht 2 – Sicherungsschicht (MAC-Adressen und Frames).</div></div>
+<div class="q"><b>2. Welche Adresse lernt ein Switch: Quell- oder Ziel-MAC?</b><button class="secondary" onclick="reveal(1)">Antwort anzeigen</button><div class="answer" id="a1">Die Quell-MAC zusammen mit dem Eingangsport. Nach der Ziel-MAC entscheidet er, wohin er sendet.</div></div>
+<div class="q"><b>3. Was trennt Broadcastdomänen?</b><button class="secondary" onclick="reveal(2)">Antwort anzeigen</button><div class="answer" id="a2">Ein Router oder eine VLAN-Grenze.</div></div>
+<div class="q"><b>4. Wie viele Bit hat eine MAC-Adresse?</b><button class="secondary" onclick="reveal(3)">Antwort anzeigen</button><div class="answer" id="a3">48 Bit = 6 Byte.</div></div>
+<div class="q"><b>5. Wie groß ist ein Ethernet-Frame mindestens?</b><button class="secondary" onclick="reveal(4)">Antwort anzeigen</button><div class="answer" id="a4">64 Byte: 14 Byte Header + 46 Byte Nutzdaten + 4 Byte FCS.</div></div>
+<div class="q"><b>6. Was ist der Unterschied zwischen CSMA/CD und CSMA/CA?</b><button class="secondary" onclick="reveal(5)">Antwort anzeigen</button><div class="answer" id="a5">CD erkennt Kollisionen (klassisches Ethernet-Halbduplex); CA versucht Kollisionen zu vermeiden (WLAN).</div></div>
+<div class="q"><b>7. Was bedeutet Trunk-Port?</b><button class="secondary" onclick="reveal(6)">Antwort anzeigen</button><div class="answer" id="a6">Ein Port, der mehrere VLANs über eine Verbindung transportiert, normalerweise mit 802.1Q-Tags.</div></div>
+<div class="q"><b>8. Was ist der Unterschied zwischen Singlemode und Multimode?</b><button class="secondary" onclick="reveal(7)">Antwort anzeigen</button><div class="answer" id="a7">Singlemode: ein Lichtweg und große Reichweite. Multimode: mehrere Lichtwege und meist kürzere Reichweite.</div></div>
+</section>
+<section id="karten" class="panel"><h2>Karteikarten</h2><div class="flash"><p class="muted" id="counter">Karte 1 von 8</p><h3 id="front">Was macht ein Router?</h3><p id="back" hidden>Er verbindet unterschiedliche IP-Netze und entscheidet anhand der IP-Adresse.</p></div><nav><button class="secondary" onclick="flip()">Antwort umdrehen</button><button onclick="nextCard()">Nächste Karte</button></nav></section>
+<section id="check" class="study"><h2>Meine Lern-Checkliste</h2><p>Hake ab, was du schon erklären kannst. Dein Fortschritt wird direkt angezeigt (nur in dieser geöffneten Seite).</p><div class="progress"><span id="bar"></span></div><p id="pct" class="muted">0 von 10 geschafft</p>
+<div id="tasks">
+<label><input type="checkbox" onchange="progress()">Ich kann Client, Server und Peer-to-Peer erklären.</label><br>
+<label><input type="checkbox" onchange="progress()">Ich kenne PAN, LAN, MAN und WAN.</label><br>
+<label><input type="checkbox" onchange="progress()">Ich kann die 7 OSI-Schichten in Reihenfolge nennen.</label><br>
+<label><input type="checkbox" onchange="progress()">Ich kenne Bit, Frame, Paket und Segment.</label><br>
+<label><input type="checkbox" onchange="progress()">Ich kann TCP und UDP unterscheiden.</label><br>
+<label><input type="checkbox" onchange="progress()">Ich kann Bus, Stern, Ring und Masche erklären.</label><br>
+<label><input type="checkbox" onchange="progress()">Ich unterscheide Hub, Switch und Router.</label><br>
+<label><input type="checkbox" onchange="progress()">Ich kann Kollisions- und Broadcastdomäne zählen.</label><br>
+<label><input type="checkbox" onchange="progress()">Ich kenne MAC-Adresse und Ethernet-Frame-Größen.</label><br>
+<label><input type="checkbox" onchange="progress()">Ich kann Learning, Forwarding, Flooding und VLAN erklären.</label><br>
+</div></section>
+<footer>Erstellt aus deinen 7 hochgeladenen NSCS-Unterlagen. Viel Erfolg beim Lernen! 🌱</footer>
+</main>
+<script>
+function reveal(i){let e=document.getElementById('a'+i);e.style.display=e.style.display==='block'?'none':'block'}
+const cards=[['Was macht ein Router?','Er verbindet unterschiedliche IP-Netze und entscheidet anhand der IP-Adresse.'],['Was lernt ein Switch?','Quell-MAC-Adresse und Eingangsport.'],['Was ist die MTU bei Ethernet?','1500 Byte Nutzdaten.'],['Wie groß ist eine MAC-Adresse?','48 Bit bzw. 6 Byte.'],['Was trennt Broadcastdomänen?','Router oder VLAN-Grenze.'],['Was bedeutet Crossover?','Ein Ende T568A, das andere T568B.'],['Was macht STP?','Es verhindert Layer-2-Schleifen, indem es redundante Links blockiert.'],['Was ist der Unterschied TCP/UDP?','TCP ist verbindungsorientiert und zuverlässig; UDP ist verbindungslos und schlank.']];
+let ci=0,shown=false;function render(){document.getElementById('counter').textContent=`Karte ${ci+1} von ${cards.length}`;document.getElementById('front').textContent=cards[ci][0];document.getElementById('back').textContent=cards[ci][1];document.getElementById('back').hidden=true;shown=false}
+function flip(){shown=!shown;document.getElementById('back').hidden=!shown}function nextCard(){ci=(ci+1)%cards.length;render()}
+function progress(){let boxes=[...document.querySelectorAll('#tasks input')],n=boxes.filter(x=>x.checked).length;document.getElementById('bar').style.width=(n/boxes.length*100)+'%';document.getElementById('pct').textContent=`${n} von ${boxes.length} geschafft`}
+</script></body></html>
